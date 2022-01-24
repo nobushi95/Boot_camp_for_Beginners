@@ -4,7 +4,11 @@ using namespace std;
 
 using ll = long long;
 
-int main() {
+#define REP(i, left, right) for (ll i = left; i < right; i++)
+#define RREP(i, right, left) for (ll i = right; i >= left; i--)
+#define FORE(elem, container) for (auto & elem : container)
+#define ALL(x) (x).begin(), (x).end()
 
+int main() {
     return 0;
 }
