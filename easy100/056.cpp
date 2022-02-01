@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+#include <atcoder/all>
+using namespace std;
+
+using ll = long long;
+
+#define REP(i, left, right) for (ll i = left; i < right; i++)
+#define REPEQ(i, left, right) for (ll i = left; i <= right; i++)
+#define RREP(i, right, left) for (ll i = right; i >= left; i--)
+#define FORE(elem, container) for (auto & elem : container)
+#define ALL(x) (x).begin(), (x).end()
+
+int main() {
+    ll A, B, K;
+    cin >> A >> B >> K;
+
+    REPEQ(i, A, B) {
+        if ((i < A + K) || (i > B -K)) cout << i << endl;
+    }
+
+    return 0;
+}
