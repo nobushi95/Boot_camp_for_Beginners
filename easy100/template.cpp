@@ -7,8 +7,8 @@ using ll = long long;
 #define RREP(i, right, left) for (ll i = right; i >= left; i--)
 #define FORE(elem, container) for (auto & elem : container)
 #define ALL(x) (x).begin(), (x).end()
-template<class T> bool chmin(T &a, T b) { if (a > b) { a = b; return true; } return false; }
-template<class T> bool chmax(T &a, T b) { if (a < b) { a = b; return true; } return false; }
+template<class T> bool chmin(T &a, const T &b) { if (a > b) { a = b; return true; } return false; }
+template<class T> bool chmax(T &a, const T &b) { if (a < b) { a = b; return true; } return false; }
 
 int main() {
     return 0;
