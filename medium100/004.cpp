@@ -18,16 +18,15 @@ int main() {
         cout << 0 << endl;
     }
 
-    ll ans = 0;
     for (int i = 2; i < S.length(); i+=2) {
-        string first = S.substr(0, i/2);
-        string second = S.substr(i/2, i/2);
+        string s = S.substr(0, S.length() - i);
+        string first = s.substr(0, s.length() / 2);
+        string second = s.substr(s.length() / 2);
         if (first == second) {
-            chmax(ans, ll(i));
+            cout << s.length() << endl;
+            break;
         }
     }
-
-    cout << ans << endl;
 
     return 0;
 }
