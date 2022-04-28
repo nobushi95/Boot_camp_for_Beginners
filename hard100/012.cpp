@@ -17,14 +17,23 @@ using mint = atcoder::modint998244353;
 int main() {
     ll N;
     cin >> N;
-    vector<ll> num(N);
-    REP(i, 0, N) {
-        ll d;
-        cin >> d;
-        if ((i == 0) != (d == 0)) {
+    vector<ll> D(N);
+    FORE(d, D) cin >> d;
+
+    if (D[0] != 0) {
+        cout << 0 << endl;
+        return 0;
+    }
+
+    REP(i, 1, N) {
+        if (D[i] == 0) {
             cout << 0 << endl;
             return 0;
         }
+    }
+
+    vector<ll> num(N);
+    FORE(d, D) {
         num[d]++;
     }
 
